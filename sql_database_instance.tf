@@ -8,8 +8,8 @@ resource "google_sql_database_instance" "db-instance-mysql" {
     tier                  = "db-perf-optimized-N-4"
     edition               = "ENTERPRISE_PLUS"
     availability_type     = "REGIONAL"
-    disk_autoresize_limit = 100
-    disk_size             = 100
+    disk_autoresize_limit = 80
+    disk_size             = 80
     disk_type             = "PD_SSD"
 
     backup_configuration {
